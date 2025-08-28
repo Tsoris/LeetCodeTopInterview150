@@ -1,0 +1,31 @@
+# ------------------------
+# Java
+# ------------------------
+*.class
+*.log
+*.ctxt
+hs_err_pid*
+
+# Ignore build directories (IntelliJ, Maven, Gradle)
+out/
+build/
+target/
+bin/
+
+# ------------------------
+# IntelliJ IDEA
+# ------------------------
+.idea/
+*.iml
+*.iws
+
+# User-specific stuff
+*.swp
+*.swo
+*.tmp
+
+# ------------------------
+# OS Files
+# ------------------------
+.DS_Store
+Thumbs.db
