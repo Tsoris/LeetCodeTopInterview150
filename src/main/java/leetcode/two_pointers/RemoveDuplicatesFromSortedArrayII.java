@@ -1,4 +1,4 @@
-package main.java.leetcode.current_problems;
+package main.java.leetcode.two_pointers;
 
 
 import java.util.Arrays;
@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class RemoveDuplicatesFromSortedArrayII {
     /**
      * 9/3/2025
+     *
      * LeetCode 80: Remove Duplicates from Sorted Array II
      * Given:
      *  array nums; non-decreasing order

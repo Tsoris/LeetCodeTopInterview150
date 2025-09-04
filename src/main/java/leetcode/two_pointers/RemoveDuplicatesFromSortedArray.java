@@ -1,4 +1,4 @@
-package main.java.leetcode.current_problems;
+package main.java.leetcode.two_pointers;
 
 import java.util.Arrays;
 
