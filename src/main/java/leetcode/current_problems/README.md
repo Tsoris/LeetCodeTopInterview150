@@ -1,0 +1,1 @@
+Folder Used to work on problems before organizing the problem by its pattern
