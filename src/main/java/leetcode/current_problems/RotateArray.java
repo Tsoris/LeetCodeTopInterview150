@@ -26,6 +26,7 @@ public class RotateArray {
      *          determine rotate index = i+k % n
      *              can be used whether i + k is greater than nums.length or not
      *          set values at nums[rotate index] to current value of loop of HashMap
+     *
      *  optimal(reverse)
      *      array[] example = {1,2,3,4,5,6,7,}; k = 3
      *      reverse entire array; example = {7,6,5,4,3,2,1}
@@ -33,6 +34,10 @@ public class RotateArray {
      *          restores order of this block; negative  * negative = positive
      *      reverse rest of the array (k to nums.length - 1); example = {5,6,7,1,2,3,4}
      *          same concept as before
+     *
+     *      also consider edge cases
+     *          nums.length = 1; places would not change regardless of rotate value
+     *          k % n = 0; rotated values end up in the same place
      */
 
     public void initial(int[] nums, int k) {
