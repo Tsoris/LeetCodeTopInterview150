@@ -1,8 +1,8 @@
-package test.java.leetcode.two_pointers;
+package test.java.leetcode.ArrayString;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-import main.java.leetcode.two_pointers.MergeSortedArray;
+import main.java.leetcode.ArrayString.MergeSortedArray;
 import org.junit.jupiter.api.Test;
 
 public class MergeSortedArrayTest {
