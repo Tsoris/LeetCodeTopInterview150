@@ -1,8 +1,7 @@
-package test.java.leetcode.ArrayString;
+package leetcode.arraystring;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-import main.java.leetcode.ArrayString.MergeSortedArray;
 import org.junit.jupiter.api.Test;
 
 public class MergeSortedArrayTest {

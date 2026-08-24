@@ -1,6 +1,6 @@
-package main.java.leetcode.ArrayString;
+package leetcode.arraystring;
 
-public class ProductofArrayExceptSelf {
+public class ProductOfArrayExceptSelf {
     /**
      * LeetCode 238: Product of Array Except Self
      * Givens:

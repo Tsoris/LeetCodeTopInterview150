@@ -1,4 +1,4 @@
-package main.java.leetcode.ArrayString;
+package leetcode.arraystring;
 
 public class BestTimeToBuyAndSellStock {
     /**
