@@ -26,6 +26,7 @@ mvn test
 
 | # | Problem | Difficulty | Category | Primary pattern | Review |
 | ---: | --- | --- | --- | --- | --- |
+| 3 | [Longest Substring Without Repeating Characters](src/main/java/leetcode/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java) | Medium | Sliding Window | Variable-size window with HashSet | |
 | 6 | [Zigzag Conversion](src/main/java/leetcode/arraystring/ZigZagConversion.java) | Medium | Array / String | String simulation | |
 | 12 | [Integer to Roman](src/main/java/leetcode/arraystring/IntegerToRoman.java) | Medium | Array / String | Greedy encoding | |
 | 13 | [Roman to Integer](src/main/java/leetcode/arraystring/RomanToInteger.java) | Easy | Array / String | String traversal | |
