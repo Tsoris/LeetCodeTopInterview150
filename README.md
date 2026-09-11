@@ -8,6 +8,7 @@ Java solutions and study notes for LeetCode's Top Interview 150 problem set.
 src/
 |-- main/java/leetcode/
 |   |-- arraystring/    # Array / String
+|   |-- hashmap/        # Hashmap
 |   |-- slidingwindow/  # Sliding Window
 |   `-- twopointers/    # Two Pointers
 `-- test/java/leetcode/ # JUnit tests, mirroring the main package tree
@@ -31,6 +32,7 @@ mvn test
 | 15 | [3Sum](src/main/java/leetcode/twopointers/ThreeSum.java) | Medium | Two Pointers | Sorting and two pointers | |
 | 26 | [Remove Duplicates from Sorted Array](src/main/java/leetcode/arraystring/RemoveDuplicatesFromSortedArray.java) | Easy | Array / String | Two pointers | |
 | 45 | [Jump Game II](src/main/java/leetcode/arraystring/JumpGameII.java) | Medium | Array / String | Greedy range expansion | |
+| 49 | [Group Anagrams](src/main/java/leetcode/hashmap/GroupAnagrams.java) | Medium | Hashmap | Character frequency keys | |
 | 55 | [Jump Game](src/main/java/leetcode/arraystring/JumpGame.java) | Medium | Array / String | Greedy reachability | |
 | 68 | [Text Justification](src/main/java/leetcode/arraystring/TextJustification.java) | Hard | Array / String | String simulation | |
 | 80 | [Remove Duplicates from Sorted Array II](src/main/java/leetcode/arraystring/RemoveDuplicatesFromSortedArrayII.java) | Medium | Array / String | Two pointers | |
@@ -42,4 +44,5 @@ mvn test
 | 189 | [Rotate Array](src/main/java/leetcode/arraystring/RotateArray.java) | Medium | Array / String | Reversal / cyclic replacement | |
 | 209 | [Minimum Size Subarray Sum](src/main/java/leetcode/slidingwindow/MinimumSizeSubarraySum.java) | Medium | Sliding Window | Variable-size window | |
 | 238 | [Product of Array Except Self](src/main/java/leetcode/arraystring/ProductOfArrayExceptSelf.java) | Medium | Array / String | Prefix and suffix products | |
+| 242 | [Valid Anagram](src/main/java/leetcode/hashmap/ValidAnagram.java) | Easy | Hashmap | Character frequency counts | |
 | 274 | [H-Index](src/main/java/leetcode/arraystring/HIndex.java) | Medium | Array / String | Sorting | |
