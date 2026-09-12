@@ -95,6 +95,9 @@ public class FindAllAnagramsInAString {
         int left = 0;
 
         for (int right = p.length(); right < s.length(); right++) {
+            //keep added and removed characters mechanics consistent
+                //characters being now considered are decremented
+                //characters no longer being considered are incremented
             charFrequency[s.charAt(right) - 'a'] --;
             charFrequency[s.charAt(left) - 'a'] ++;
 
