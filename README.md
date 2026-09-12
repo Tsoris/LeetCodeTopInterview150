@@ -47,3 +47,4 @@ mvn test
 | 238 | [Product of Array Except Self](src/main/java/leetcode/arraystring/ProductOfArrayExceptSelf.java) | Medium | Array / String | Prefix and suffix products | |
 | 242 | [Valid Anagram](src/main/java/leetcode/hashmap/ValidAnagram.java) | Easy | Hashmap | Character frequency counts | |
 | 274 | [H-Index](src/main/java/leetcode/arraystring/HIndex.java) | Medium | Array / String | Sorting | |
+| 438 | [Find All Anagrams in a String](src/main/java/leetcode/slidingwindow/FindAllAnagramsInAString.java) | Medium | Sliding Window | Fixed-size window with character frequency differences | |
