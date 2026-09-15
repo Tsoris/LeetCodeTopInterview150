@@ -9,7 +9,9 @@ src/
 |-- main/java/leetcode/
 |   |-- arraystring/    # Array / String
 |   |-- binarysearch/   # Binary Search
+|   |-- binarytree/     # Binary Tree
 |   |-- hashmap/        # Hashmap
+|   |-- linkedlist/     # Linked List
 |   |-- stack/          # Stack (supplemental practice)
 |   |-- slidingwindow/  # Sliding Window
 |   `-- twopointers/    # Two Pointers
@@ -34,6 +36,7 @@ mvn test
 | 12 | [Integer to Roman](src/main/java/leetcode/arraystring/IntegerToRoman.java) | Medium | Array / String | Greedy encoding                                        | |
 | 13 | [Roman to Integer](src/main/java/leetcode/arraystring/RomanToInteger.java) | Easy | Array / String | String traversal                                       | |
 | 15 | [3Sum](src/main/java/leetcode/twopointers/ThreeSum.java) | Medium | Two Pointers | Sorting, two pointers, handling duplicates             | |
+| 21 | [Merge Two Sorted Lists](src/main/java/leetcode/linkedlist/MergeTwoSortedLists.java) | Easy | Linked List | Merge with a sentinel node; initial and cleaned variants | |
 | 26 | [Remove Duplicates from Sorted Array](src/main/java/leetcode/arraystring/RemoveDuplicatesFromSortedArray.java) | Easy | Array / String | Two pointers                                           | |
 | 33 | [Search in Rotated Sorted Array](src/main/java/leetcode/binarysearch/SearchInRotatedSortedArray.java) | Medium | Binary Search | Identify the sorted half                               | |
 | 45 | [Jump Game II](src/main/java/leetcode/arraystring/JumpGameII.java) | Medium | Array / String | Greedy range expansion                                 | |
@@ -42,12 +45,14 @@ mvn test
 | 68 | [Text Justification](src/main/java/leetcode/arraystring/TextJustification.java) | Hard | Array / String | String simulation                                      | |
 | 80 | [Remove Duplicates from Sorted Array II](src/main/java/leetcode/arraystring/RemoveDuplicatesFromSortedArrayII.java) | Medium | Array / String | Two pointers                                           | |
 | 88 | [Merge Sorted Array](src/main/java/leetcode/arraystring/MergeSortedArray.java) | Easy | Array / String | Two pointers from the end                              | |
+| 104 | [Maximum Depth of Binary Tree](src/main/java/leetcode/binarytree/MaximumDepthOfBinaryTree.java) | Easy | Binary Tree | Recursive depth-first traversal | |
 | 121 | [Best Time to Buy and Sell Stock](src/main/java/leetcode/arraystring/BestTimeToBuyAndSellStock.java) | Easy | Array / String | Running minimum                                        | |
 | 122 | [Best Time to Buy and Sell Stock II](src/main/java/leetcode/arraystring/BestTimeToBuyAndSellStockII.java) | Medium | Array / String | Greedy                                                 | |
 | 134 | [Gas Station](src/main/java/leetcode/arraystring/GasStation.java) | Medium | Array / String | Greedy                                                 | |
 | 135 | [Candy](src/main/java/leetcode/arraystring/Candy.java) | Hard | Array / String | Not implemented                                        | TODO |
 | 169 | [Majority Element](src/main/java/leetcode/arraystring/MajorityElement.java) | Easy | Array / String | Boyer-Moore voting                                     | |
 | 189 | [Rotate Array](src/main/java/leetcode/arraystring/RotateArray.java) | Medium | Array / String | Reversal / cyclic replacement                          | |
+| 206 | [Reverse Linked List](src/main/java/leetcode/linkedlist/ReverseLinkedList.java) | Easy | Linked List | Iterative pointer reversal | Supplemental practice |
 | 209 | [Minimum Size Subarray Sum](src/main/java/leetcode/slidingwindow/MinimumSizeSubarraySum.java) | Medium | Sliding Window | Variable-size window                                   | |
 | 238 | [Product of Array Except Self](src/main/java/leetcode/arraystring/ProductOfArrayExceptSelf.java) | Medium | Array / String | Prefix and suffix products                             | |
 | 242 | [Valid Anagram](src/main/java/leetcode/hashmap/ValidAnagram.java) | Easy | Hashmap | Character frequency counts                             | |
