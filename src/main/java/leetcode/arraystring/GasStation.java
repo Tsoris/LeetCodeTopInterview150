@@ -26,9 +26,6 @@ public class GasStation {
      *              - currFuel = currFuel + gas[currStation]
      *              -
      *
-     *
-     *
-     *
      */
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int totalGas = 0, totalCost = 0;
