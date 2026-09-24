@@ -27,6 +27,8 @@ public class BinarySearch {
      * nums is sorted in ascending order.
      */
 
+    // Time: O(log n); Auxiliary space: O(1).
+    // n = nums.length; halves the interval.
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;

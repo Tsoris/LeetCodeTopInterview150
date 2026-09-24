@@ -24,6 +24,8 @@ public class JumpGame {
      *
      */
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; one backward scan. Complexity does not certify correctness.
     public boolean canJump(int[] nums) {
         int currSpot = nums.length - 1;
         int i = currSpot - 1;
@@ -39,6 +41,8 @@ public class JumpGame {
         return false;
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; one backward scan. Complexity does not certify correctness.
     public boolean canJumpFor(int[]nums) {
         int currSpot = nums.length - 1;
         for (int i = currSpot - 1; i >= 0; i--) {

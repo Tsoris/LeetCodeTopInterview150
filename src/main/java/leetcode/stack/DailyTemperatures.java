@@ -31,6 +31,8 @@ public class DailyTemperatures {
      * 30 <= temperatures[i] <= 100
      */
 
+    // Time: O(n); Auxiliary space: O(n), excluding O(n) output.
+    // n = temperatures.length; each index is pushed and popped at most once.
     public int[] dailyTemperatures(int[] temperatures) {
         // Maybe we can start from the back??
         // Monotonic Stack - stack that moves in one direction

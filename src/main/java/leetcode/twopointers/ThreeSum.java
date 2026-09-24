@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ThreeSum {
+    // Time: O(n^2); Auxiliary space: O(n) worst case for Java sorting, excluding O(t) output.
+    // n = nums.length, t = returned triplets; pointer scan uses O(1). See README sorting note.
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> threeSums = new ArrayList<>();
         Arrays.sort(nums);

@@ -2,6 +2,8 @@ package leetcode.linkedlist;
 
 public class MergeTwoSortedLists {
 
+    // Time: O(m + n); Auxiliary space: O(1).
+    // m and n = list lengths; relinks nodes with at most one sentinel.
     public ListNode mergeTwoList(ListNode list1, ListNode list2) {
         ListNode head = null;
         ListNode currNode = null;
@@ -54,6 +56,8 @@ public class MergeTwoSortedLists {
     }
 
 
+    // Time: O(m + n); Auxiliary space: O(1).
+    // m and n = list lengths; relinks nodes with at most one sentinel.
     public ListNode cleanedMergeTwoList(ListNode list1, ListNode list2) {
         //handles null list logic cleanly to deal with happy path
         if (list1 == null) return list2;
@@ -92,6 +96,8 @@ public class MergeTwoSortedLists {
         return head;
     }
 
+    // Time: O(m + n); Auxiliary space: O(1).
+    // m and n = list lengths; relinks nodes with at most one sentinel.
     public ListNode optimalMergeTwoList(ListNode list1, ListNode list2) {
         //sentinel solution, time complexity is the same as above, but the easiest to reason about
         ListNode sentinel = new ListNode();

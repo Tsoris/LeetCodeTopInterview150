@@ -11,7 +11,7 @@ public class HIndex {
      *      iterate each index until the index matches the remaining number of papers
      *          there will be at least n papers with a score of n
      *          Time Complexity: O(nlogn)
-     *          Space Complexity: O(1)
+     *          Space Complexity: O(n) worst case for Java sorting; scan alone O(1)
      * bucket:
      *      create frequency array[n+1] of the number of papers with n citations
      *          when a paper with this x number of citations if seen add 1 to that index
@@ -24,6 +24,8 @@ public class HIndex {
      *              Space Complexity: O(n) - extra space
      */
 
+    // Time: O(n log n); Auxiliary space: O(n) worst case for Java sorting.
+    // n = citations.length; scan uses O(1). See README sorting note. hIndex remains an incorrect attempt.
     public int initialSort(int[] citations) {
         Arrays.sort(citations);
         for(int i = 0; i < citations.length; i++) {
@@ -35,6 +37,8 @@ public class HIndex {
         return 0;
     }
 
+    // Time: O(n); Auxiliary space: O(n).
+    // n = citations.length; n + 1 buckets.
     public int initialFrequency(int[] citations) {
         int n = citations.length;
 
@@ -64,6 +68,8 @@ public class HIndex {
      *  Goal: Derive and build intuition for a frequency map
      *  hint 1: suggested sorting
      */
+    // Time: O(n log n); Auxiliary space: O(n) worst case for Java sorting.
+    // n = citations.length; scan uses O(1). See README sorting note. hIndex remains an incorrect attempt.
     public int hIndex(int[] citations) {
         // h-index - maximum value of h such that at least h papers have been cited at least h times
         // [3, 0, 6, 1, 5]

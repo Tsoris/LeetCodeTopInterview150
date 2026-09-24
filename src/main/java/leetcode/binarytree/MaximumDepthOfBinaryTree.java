@@ -38,6 +38,8 @@ public class MaximumDepthOfBinaryTree {
       }
   }
 
+  // Time: O(n); Auxiliary space: O(h).
+  // n = nodes, h = height; recursion stack is O(n) for a skewed tree.
   public int maxDepth(TreeNode root) {
           if (root == null) {
               return 0;

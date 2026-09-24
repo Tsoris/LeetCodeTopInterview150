@@ -33,6 +33,8 @@ public class RomanToInteger {
         this.romanNumeralValues = createRomanNumberValues();
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = input.length(); fixed Roman-symbol table and constant-sized temporary substrings.
     public int romanToInteger (String input) {
         romanNumeralValues = createRomanNumberValues();
         int total = 0;
@@ -65,6 +67,8 @@ public class RomanToInteger {
      *      if nextValue should be found or just set as 0 if the index is out of bound.
      */
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = input.length(); fixed Roman-symbol table and constant-sized temporary substrings.
     public int romanToIntegerOptimal(String input) {
         int total = 0;
         for (int i = 0; i < input.length() - 1; i++) {
@@ -81,6 +85,8 @@ public class RomanToInteger {
 
         return total;
     }
+    // Time: O(1); Auxiliary space: O(1).
+    // Fixed set of Roman symbols.
     private int romanValues(char currChar) {
         return switch (currChar) {
             case 'I' -> 1;
@@ -94,6 +100,8 @@ public class RomanToInteger {
         };
     }
 
+    // Time: O(1); Auxiliary space: O(1).
+    // Fixed set of Roman symbols.
     private HashMap<String, Integer> createRomanNumberValues(){
         HashMap<String, Integer> romanNumeralValues = new HashMap<>();
         romanNumeralValues.put("I", 1);

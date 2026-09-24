@@ -1,6 +1,8 @@
 package leetcode.binarytree;
 
 public class LowestCommonAncestor {
+    // Time: O(n); Auxiliary space: O(h).
+    // n = nodes, h = height; recursion stack is O(n) for a skewed tree.
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         //post order solution
 

@@ -40,6 +40,8 @@ public class ThreeSumPractice {
      * -10^5 <= nums[i] <= 10^5
      */
 
+    // Time: O(n^2); Auxiliary space: O(n) worst case for Java sorting, excluding O(t) output.
+    // n = nums.length, t = returned triplets; pointer scan uses O(1). See README sorting note.
     public List<List<Integer>> threeSum(int[] nums) {
         // sorting
         List<List<Integer>> result = new ArrayList<>();

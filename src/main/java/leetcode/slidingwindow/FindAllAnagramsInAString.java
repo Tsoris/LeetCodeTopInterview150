@@ -35,6 +35,8 @@ public class FindAllAnagramsInAString {
      */
 
     // Recount each candidate window: O(s.length() * p.length()) time and O(p.length()) auxiliary space.
+    // Time: O(m + max(0, n - m + 1) * m); Auxiliary space: O(m), excluding O(r) output.
+    // n = s.length(), m = p.length(), r = matches; copies and recounts each window.
     public List<Integer> initialFindAnagrams(String s, String p) {
         ArrayList<Integer> indices = new ArrayList<>();
 
@@ -63,7 +65,9 @@ public class FindAllAnagramsInAString {
     }
 
     // Maintain pattern counts minus window counts; all zeros means an anagram.
-    // O(s.length() + p.length()) time and O(1) auxiliary space, excluding results.
+    // O(s.length() + p.length()) time; p.toCharArray() adds O(p.length()) auxiliary space.
+    // Time: O(n + m); Auxiliary space: O(m), excluding O(r) output.
+    // n = s.length(), m = p.length(), r = matches; counters use O(1), but p.toCharArray() allocates O(m).
     public List<Integer> optimizeFindAnagrams(String s, String p) {
         if (s.length() < p.length()) {
             return new ArrayList<>();

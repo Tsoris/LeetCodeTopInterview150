@@ -42,6 +42,8 @@ public class RemoveDuplicatesFromSortedArray {
      *  - ensure that unique ints are in order, everything after is irrelevant
      *  -
      */
+    // Time: O(n^2) upper bound before return or exception; Auxiliary space: O(n) including debug formatting.
+    // n = nums.length; resetting j rescans suffixes. Known out-of-bounds attempt; loop uses O(1).
     public int initial(int[] nums) {
         int i = 0;
         int j = 1;
@@ -63,6 +65,8 @@ public class RemoveDuplicatesFromSortedArray {
         return uniqueElements;
     }
 
+    // Time: O(n); Auxiliary space: O(n) including debug formatting.
+    // n = nums.length; compaction alone uses O(1); Arrays.toString creates O(n) temporary storage.
     public int optimal(int[] nums) {
         int i = 0;
         int counter = 1;

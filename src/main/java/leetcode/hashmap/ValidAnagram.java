@@ -1,6 +1,8 @@
 package leetcode.hashmap;
 
 public class ValidAnagram {
+    // Time: O(n); Auxiliary space: O(1).
+    // n = common string length; unequal lengths return immediately; fixed 26-letter array.
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -25,6 +27,8 @@ public class ValidAnagram {
         return true;
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = common string length; unequal lengths return immediately; fixed 26-letter array.
     public boolean isAnagramAlternative(String s, String t) {
         //Interesting, slightly out of the boxing solution; slightly deeper reasoning
         if (s.length() != t.length()) {

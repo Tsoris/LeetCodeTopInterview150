@@ -25,6 +25,8 @@ public class BestTimeToBuyAndSellStock {
      *              if profits are greater than curr max_profit, then update max_profit
      *
      */
+    // Time: O(n^2); Auxiliary space: O(1).
+    // n = prices.length; checks every pair.
     public int initial(int[] prices){
         if (prices.length < 2) {
             return 0;
@@ -47,6 +49,8 @@ public class BestTimeToBuyAndSellStock {
         return max;
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = prices.length; one pass.
     public int optimal(int[] prices) {
         int currBuy = Integer.MAX_VALUE;
         int maxProfit = 0;

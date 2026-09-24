@@ -10,7 +10,9 @@ src/
 |   |-- arraystring/    # Array / String
 |   |-- binarysearch/   # Binary Search
 |   |-- binarytree/     # Binary Tree
+|   |-- graph/          # Graph / Matrix Traversal
 |   |-- hashmap/        # Hashmap
+|   |-- heap/           # Heap / Priority Queue
 |   |-- linkedlist/     # Linked List
 |   |-- stack/          # Stack (supplemental practice)
 |   |-- slidingwindow/  # Sliding Window
@@ -58,6 +60,7 @@ mvn test
 | 189 | [Rotate Array](src/main/java/leetcode/arraystring/RotateArray.java) | Medium | Array / String | Reversal / cyclic replacement                          | |
 | 206 | [Reverse Linked List](src/main/java/leetcode/linkedlist/ReverseLinkedList.java) | Easy | Linked List | Iterative pointer reversal | Supplemental practice |
 | 209 | [Minimum Size Subarray Sum](src/main/java/leetcode/slidingwindow/MinimumSizeSubarraySum.java) | Medium | Sliding Window | Variable-size window                                   | |
+| 215 | [Kth Largest Element in an Array](src/main/java/leetcode/heap/KthLargestElementInAnArray.java) | Medium | Heap / Selection | Max heap, bounded min heap, randomized quickselect | |
 | 226 | [Invert Binary Tree](src/main/java/leetcode/binarytree/InvertBinaryTree.java) | Easy | Binary Tree | Recursive child swapping | |
 | 230 | [Kth Smallest Element in a BST](src/main/java/leetcode/binarytree/KthSmallestInBST.java) | Medium | Binary Search Tree | In-order traversal | |
 | 236 | [Lowest Common Ancestor of a Binary Tree](src/main/java/leetcode/binarytree/LowestCommonAncestor.java) | Medium | Binary Tree | Recursive subtree search | |
@@ -66,6 +69,8 @@ mvn test
 | 274 | [H-Index](src/main/java/leetcode/arraystring/HIndex.java) | Medium | Array / String | Sorting / frequency buckets                            | Latest hIndex attempt needs correction |
 | 438 | [Find All Anagrams in a String](src/main/java/leetcode/slidingwindow/FindAllAnagramsInAString.java) | Medium | Sliding Window | Fixed-size window with character frequency differences | |
 | 704 | [Binary Search](src/main/java/leetcode/binarysearch/BinarySearch.java) | Easy | Binary Search | Halve the search interval                              | Supplemental practice |
+| 994 | [Rotting Oranges](src/main/java/leetcode/graph/RottingOranges.java) | Medium | Graph / Matrix | Multi-source breadth-first search | |
+| 1046 | [Last Stone Weight](src/main/java/leetcode/heap/LastStoneWeight.java) | Easy | Heap | Max-heap simulation | Supplemental practice |
 
 ## Additional practice and review
 
@@ -77,3 +82,13 @@ mvn test
 - [TreeNode](src/main/java/leetcode/binarytree/TreeNode.java) is used by KthSmallestInBST and LowestCommonAncestor. Other tree solutions retain their own nested node classes.
 
 - [ListNode](src/main/java/leetcode/linkedlist/ListNode.java) is shared by the linked-list solutions, including MergeTwoSortedLists and ReverseLinkedList.
+
+## Complexity notes
+
+Each solution variant and algorithm helper has `Time` and `Auxiliary space` comments above its method. Demo `main` methods and node constructors are excluded.
+
+- Bounds describe the current implementation on valid problem inputs, generally in the worst case. HashMap/HashSet bounds marked **expected** assume constant-time hash operations; growable arrays/builders use amortized append costs.
+- **Auxiliary space** is peak live extra storage, excluding the input and returned result. Result storage is noted separately. Temporary character arrays, debug-formatting strings, and recursion stacks count as auxiliary space.
+- Symbols are defined beside each method: commonly `n` is input size, `h` tree height, `w` maximum tree width, and `k` string length or a problem parameter. A skewed tree can have `h = n`.
+- Sorting note: the pointer scans in 3Sum and H-Index need O(1) space after sorting. The full methods also call `Arrays.sort(int[])`. OpenJDK 17 can merge runs using an O(n) buffer, so these comments use O(n) worst-case auxiliary space rather than assuming an always-in-place sort. See the [OpenJDK 17 sorting implementation](https://github.com/openjdk/jdk17u/blob/master/src/java.base/share/classes/java/util/DualPivotQuicksort.java). Other JDK implementations may differ.
+- Stub or incorrect attempts are labeled as such. Their complexity describes the code present, not the cost of a hypothetical corrected solution. Zigzag's single-row case does not terminate, so it has no finite bound over all valid inputs.

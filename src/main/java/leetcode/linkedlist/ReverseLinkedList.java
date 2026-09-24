@@ -32,6 +32,8 @@ public class ReverseLinkedList {
      *
      * Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
      */
+    // Time: O(n); Auxiliary space: O(1).
+    // n = list length; reverses links with three pointers.
     public ListNode reverseList(ListNode head) {
         ListNode prevNode = null;
         ListNode currNode = head;

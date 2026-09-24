@@ -34,6 +34,8 @@ public class ContainerWithMostWater {
     /**
      * Too slow to pass LeetCode test
      */
+    // Time: O(n^2); Auxiliary space: O(1).
+    // n = height.length; all pairs of walls.
     public int initialMaxArea(int[] height) {
         //Area is calculated by using the min height of the 2 walls multiplied by the distance between them
         //can use 2 pointers to move the walls
@@ -50,6 +52,8 @@ public class ContainerWithMostWater {
         return maxArea;
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = height.length; each step moves an endpoint inward.
     public int optimizeInitialMaxArea(int[] height) {
         //Area is calculated by using the min height of the 2 walls multiplied by the distance between them
         //can use 2 pointers to move the walls

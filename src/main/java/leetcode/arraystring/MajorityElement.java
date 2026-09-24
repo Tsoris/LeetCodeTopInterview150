@@ -34,6 +34,8 @@ public class MajorityElement {
      *  Space Complexity : O(1) - no extra space
      */
 
+    // Time: O(n) expected; Auxiliary space: O(n).
+    // n = nums.length; expected O(1) HashMap operations.
     public int initial(int[] nums) {
         if(nums.length < 2) {
             return nums[0];
@@ -55,6 +57,8 @@ public class MajorityElement {
         return 0;
     }
 
+    // Time: O(n) expected; Auxiliary space: O(n).
+    // n = nums.length; expected O(1) HashMap operations.
     public int optimized(int[] nums) {
         int threshold = nums.length >>> 1;
         HashMap<Integer, Integer> freq = new HashMap<>();
@@ -67,6 +71,8 @@ public class MajorityElement {
         return nums[0];
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; candidate and counter.
     public int optimal(int[] nums) {
         int candidate = 0, count = 0;
         for (int num: nums) {

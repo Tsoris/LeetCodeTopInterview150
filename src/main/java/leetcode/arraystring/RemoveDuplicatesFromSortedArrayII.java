@@ -19,6 +19,8 @@ public class RemoveDuplicatesFromSortedArrayII {
      *
      */
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; unfinished empty-loop attempt, measured at source level.
     public int initial(int[] nums) {
         int i = 0;
         int uniqueCount;
@@ -30,6 +32,8 @@ public class RemoveDuplicatesFromSortedArrayII {
         return 0;
     }
 
+    // Time: O(n); Auxiliary space: O(n) including debug formatting.
+    // n = nums.length; compaction alone uses O(1); Arrays.toString creates O(n) temporary storage.
     public int optimal(int[] nums) {
         if (nums.length < 3) return nums.length;
 

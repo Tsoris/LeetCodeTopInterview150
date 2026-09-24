@@ -1,6 +1,8 @@
 package leetcode.linkedlist;
 
 public class RemoveNthNodeFromEndOfList {
+    // Time: O(L); Auxiliary space: O(1).
+    // L = list length; parameter n is the removal position, with 1 <= n <= L.
     public ListNode twoPassRemoveNthFromEnd(ListNode head, int n) {
         ListNode curr = head;
 
@@ -25,6 +27,8 @@ public class RemoveNthNodeFromEndOfList {
         return head;
     }
 
+    // Time: O(L); Auxiliary space: O(1).
+    // L = list length; parameter n is the removal position, with 1 <= n <= L.
     public ListNode singlePassRemoveNthFromEnd(ListNode head, int n) {
         ListNode sentinel = new ListNode();
         sentinel.next = head;

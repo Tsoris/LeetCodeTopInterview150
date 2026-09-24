@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class KthSmallestInBST {
+    // Time: O(n); Auxiliary space: O(n + h) = O(n).
+    // n = nodes, h = height; stores every value plus recursion stack, even for small k.
     public int kThSmallest(TreeNode root, int k) {
         List<Integer> treeVals = new ArrayList<>();
 
@@ -12,6 +14,8 @@ public class KthSmallestInBST {
         return treeVals.get(k - 1);
     }
 
+    // Time: O(n); Auxiliary space: O(n + h) = O(n).
+    // n = nodes, h = height; stores every value plus recursion stack, even for small k.
     private void inOrderTraversal(TreeNode root, List<Integer> treeVals) {
         if (root == null) {
             return;

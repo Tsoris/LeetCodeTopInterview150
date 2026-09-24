@@ -39,6 +39,8 @@ public class GroupAnagrams {
      *      - strs[i] consists of lowercase English letters.
      */
 
+    // Time: O(n^2 * (k + 1)); Auxiliary space: O(n), excluding O(n) output references.
+    // n = string count, k = maximum length; validated array and fixed 26-letter counters.
     public List<List<String>> initialGroupAnagrams(String[] strs) {
         /**
          * Determine whether two strings are anagrams:
@@ -90,6 +92,8 @@ public class GroupAnagrams {
         return result;
     }
 
+    // Time: O(k + 1); Auxiliary space: O(1).
+    // k = common string length; unequal lengths return immediately; 26 counters.
     private boolean initialGroupAnagramsHelper(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -112,6 +116,8 @@ public class GroupAnagrams {
         return true;
     }
 
+    // Time: O(n * (k + 1)) expected; Auxiliary space: O(n + k), excluding O(n) output references.
+    // n = string count, k = maximum length; keys use 26 fixed-width int counts; toCharArray allocates O(k).
     public List<List<String>> optimizedGroupAnagrams(String[] strs) {
         // When items need to be grouped, consider a HashMap: use a shared property
         // as the key and collect matching items in a list. Here, that property is character frequency.

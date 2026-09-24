@@ -38,6 +38,8 @@ public class SearchInRotatedSortedArray {
      * -10^4 <= target <= 10^4
      */
 
+    // Time: O(log n); Auxiliary space: O(1).
+    // n = nums.length; distinct values allow discarding a half each step.
     public int search(int[]nums, int target) {
         int left = 0;
         int right = nums.length - 1;

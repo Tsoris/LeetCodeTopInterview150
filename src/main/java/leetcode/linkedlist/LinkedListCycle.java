@@ -1,6 +1,8 @@
 package leetcode.linkedlist;
 
 public class LinkedListCycle {
+    // Time: O(n); Auxiliary space: O(1).
+    // n = distinct reachable nodes including any cycle; fast and slow pointers.
     public boolean hasCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;

@@ -1,6 +1,8 @@
 package leetcode.linkedlist;
 
 public class ReorderList {
+    // Time: O(n); Auxiliary space: O(1).
+    // n = list length; count, split, reverse, and interleave.
     public void reorderList(ListNode head) {
         ListNode curr = head;
 

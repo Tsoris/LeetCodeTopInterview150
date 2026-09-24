@@ -41,6 +41,8 @@ public class LongestSubstringWithoutRepeatingCharacters {
      * inputs, the final index can only produce length 1 and cannot improve the best.
      * Empty input naturally returns 0.
      */
+    // Time: O(n * min(n, a)) expected, at most O(n^2); Auxiliary space: O(min(n, a)).
+    // n = string length, a = alphabet size; restarts a HashSet scan at each position.
     public int initialLengthOfLongestSubString(String s) {
         if (s.length() == 1) {
             return 1;
@@ -71,6 +73,8 @@ public class LongestSubstringWithoutRepeatingCharacters {
      * Each character enters and leaves the set at most once: O(n) expected time
      * with HashSet operations, O(min(n, k)) extra space.
      */
+    // Time: O(n) expected; Auxiliary space: O(min(n, a)).
+    // n = string length, a = alphabet size; each character enters and leaves the HashSet at most once.
     public int optimizedLengthOfLongestSubString(String s) {
         int left = 0;
         int right = 0;
@@ -104,6 +108,8 @@ public class LongestSubstringWithoutRepeatingCharacters {
      * Review cases: "" -> 0, "a" -> 1, "bbbbb" -> 1, "abba" -> 2,
      * "abcabcbb" -> 3, and "pwwkew" -> 3. Spaces count as characters too.
      */
+    // Time: O(n) expected; Auxiliary space: O(min(n, a)).
+    // n = string length, a = alphabet size; each character enters and leaves the HashSet at most once.
     public int cleanedOptimizedLengthOfLongestSubString(String s) {
         int longest = 0;
         int left = 0;

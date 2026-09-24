@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TextJustification {
+    // Time: O(n + C) on terminating valid-width inputs; Auxiliary space: O(W), excluding output.
+    // n = word count, C = total input characters, W = maxWidth. Incorrect attempt can divide by zero.
     public List<String> justifiedText(String[] words, int maxWidth) {
         List<String> justifiedText = new ArrayList<>();
         int lineStart = 0;
@@ -37,6 +39,8 @@ public class TextJustification {
         return justifiedText;
     }
 
+    // Time: O(n + L * W); Auxiliary space: O(W), excluding O(L * W) output.
+    // n = word count, L = output lines, W = maxWidth; includes writing padding spaces.
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> justifiedText = new ArrayList<>();
         int lineStart = 0;

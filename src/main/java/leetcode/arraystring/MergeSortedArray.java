@@ -34,6 +34,8 @@ public class MergeSortedArray{
      * - Time Complexity: O(m+n)
      * - Space Complexity: O(1)
      */
+    // Time: O(m + n); Auxiliary space: O(m + n) including debug formatting.
+    // m and n = input counts; merge alone uses O(m), but Arrays.toString allocates O(m + n).
     public void initial(int[] nums1, int m, int[] nums2, int n) {
         int[] mArray = new int[m];
         for (int i = 0; i < m; i++) {
@@ -65,6 +67,8 @@ public class MergeSortedArray{
         System.out.println(Arrays.toString(nums1));
     }
 
+    // Time: O(m + n); Auxiliary space: O(m + n) including debug formatting.
+    // m and n = input counts; merge alone uses O(1), but Arrays.toString allocates O(m + n).
     public void optimal(int[] nums1, int m, int[] nums2, int n){
         int i = m - 1;
         int j = n - 1;

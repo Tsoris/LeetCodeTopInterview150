@@ -27,6 +27,8 @@ public class GasStation {
      *              -
      *
      */
+    // Time: O(n); Auxiliary space: O(1).
+    // n = station count; two passes.
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int totalGas = 0, totalCost = 0;
 

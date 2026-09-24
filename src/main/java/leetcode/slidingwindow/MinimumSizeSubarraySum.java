@@ -1,6 +1,8 @@
 package leetcode.slidingwindow;
 
 public class MinimumSizeSubarraySum {
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; positive values let both endpoints move only forward.
     public int minSubArrayLen(int target, int[] nums) {
 
         /**

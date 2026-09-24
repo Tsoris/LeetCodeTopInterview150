@@ -40,6 +40,8 @@ public class RotateArray {
      *          k % n = 0; rotated values end up in the same place
      */
 
+    // Time: O(n) expected; Auxiliary space: O(n).
+    // n = nums.length; index map with expected O(1) operations.
     public void initial(int[] nums, int k) {
         HashMap<Integer, Integer> index_value = new HashMap<>();
         for(int i = 0; i < nums.length; i++) {
@@ -55,6 +57,8 @@ public class RotateArray {
         });
     }
 
+    // Time: O(n) expected; Auxiliary space: O(n).
+    // n = nums.length; index map with expected O(1) operations.
     public void revise(int[] nums, int k) {
         int n = nums.length;
         if (n <= 1) return;
@@ -73,6 +77,8 @@ public class RotateArray {
         }
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; three in-place reversals.
     public void optimal_reverse(int[] nums, int k) {
         int length = nums.length;
 
@@ -86,6 +92,8 @@ public class RotateArray {
         reverse(nums, k, length - 1);
     }
 
+    // Time: O(r); Auxiliary space: O(1).
+    // r = element count in the requested inclusive range.
     private void reverse(int[] nums, int start, int end) {
         while(start < end) {
             int temp = nums[start];

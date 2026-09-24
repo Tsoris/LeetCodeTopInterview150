@@ -10,6 +10,8 @@ public class JumpGameII {
      * i + j < n
      */
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; unfinished attempt returns zero after a scan.
     public int sol(int[] nums) {
         int furthest = 0;
         int jumps = 0;
@@ -28,6 +30,8 @@ public class JumpGameII {
         return 0;
     }
 
+    // Time: O(n); Auxiliary space: O(1).
+    // n = nums.length; one forward scan.
     public int optimal(int[] nums) {
         if (nums.length <= 1) {
             return 0;

@@ -33,6 +33,8 @@ public class Candy {
      * 0 <= ratings[i] <= 5 * 104
      */
 
+    // Time: O(1); Auxiliary space: O(1).
+    // Unfinished constant-return stub, not a completed solution.
     public int candy(int[] ratings) {
         //each child gets at least 1 candy
         // [1, 3, 4, 2]

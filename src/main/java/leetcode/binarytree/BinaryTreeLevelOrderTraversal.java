@@ -26,6 +26,8 @@ public class BinaryTreeLevelOrderTraversal {
         }
     }
 
+    // Time: O(n); Auxiliary space: O(h), excluding O(n) result storage.
+    // n = traversed nodes, h = height; recursion stack and values grouped by level.
     public List<List<Integer>> depthFirstTraversalLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
 
@@ -34,6 +36,8 @@ public class BinaryTreeLevelOrderTraversal {
         return result;
     }
 
+    // Time: O(n); Auxiliary space: O(h), excluding O(n) result storage.
+    // n = traversed nodes, h = height; recursion stack and values grouped by level.
     public void depthFirstTraverseLevel(TreeNode root, int level, List<List<Integer>> result) {
         if (root == null) {
             return;
@@ -47,6 +51,8 @@ public class BinaryTreeLevelOrderTraversal {
         depthFirstTraverseLevel(root.right, level + 1, result);
     }
 
+    // Time: O(n); Auxiliary space: O(w), excluding O(n) output.
+    // n = nodes, w = maximum width; queue holds portions of at most two levels.
     public List<List<Integer>> breathFirstTraversalLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
 

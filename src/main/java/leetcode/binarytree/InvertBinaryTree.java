@@ -48,12 +48,16 @@ public class InvertBinaryTree {
      * -100 <= Node.val <= 100
      */
 
+    // Time: O(n); Auxiliary space: O(h).
+    // n = nodes, h = height; recursion stack is O(n) for a skewed tree.
     public TreeNode invertTree(TreeNode root) {
         invert(root);
 
         return root;
     }
 
+    // Time: O(n); Auxiliary space: O(h).
+    // n = nodes, h = height; recursion stack is O(n) for a skewed tree.
     private void invert(TreeNode root) {
         if (root == null) {
             return;

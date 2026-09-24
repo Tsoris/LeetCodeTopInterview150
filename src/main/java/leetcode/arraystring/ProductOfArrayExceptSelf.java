@@ -56,6 +56,8 @@ public class ProductOfArrayExceptSelf {
      *      - Prefix and suffix product problem
      *          - prefix sum alternative
      */
+    // Time: O(n); Auxiliary space: O(n), excluding O(n) output.
+    // n = nums.length; extra suffix array besides returned prefix array.
     public int[] productExceptSelf2Arrays(int[] nums){
         int numsLength  = nums.length;
         int[] leftSideProducts = new int[numsLength];
@@ -78,6 +80,8 @@ public class ProductOfArrayExceptSelf {
         return leftSideProducts;
     }
 
+    // Time: O(n); Auxiliary space: O(1), excluding O(n) output.
+    // n = nums.length; prefix storage reuses output; suffix is a scalar.
     public int[] productExceptSelf(int[] nums) {
         int nums_length = nums.length;
         int[] solution = new int[nums_length];

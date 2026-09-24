@@ -1,6 +1,8 @@
 package leetcode.arraystring;
 
 public class ZigZagConversion {
+    // Time: No finite bound for all valid inputs; Auxiliary space: No finite bound for all valid inputs.
+    // For numRows = 1 and s.length() > 1, index never advances and builder keeps growing. Incomplete algorithm.
     public String convert(String s, int numRows) {
         StringBuilder converted = new StringBuilder();
         int currRow = 0;
